@@ -17,6 +17,10 @@ while not False:
 
     if not "010Editor.exe" in (p.name() for p in psutil.process_iter()):
         print('Please Open 010 Editor')
+        try:
+            RPC.close()
+        except:
+            time.sleep(1)
         time.sleep(1)
     
     else:
