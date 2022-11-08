@@ -4,6 +4,8 @@
 
 Run main.py while running Discord and 010 Editor. It is better to close up the script and open it back on, when you closed 010Editor, until I fix the loop.
 
+<b>ONLY WORKS ON WINDOWS!</b>
+
 # What does it look like
 
 People can track what byte you are working on at the moment.
