@@ -10,4 +10,7 @@ def GetByteNumber():
             if i != offsets[-1]:
                 addr = pm.read_longlong(addr + i)
         return addr + offsets[-1]
-    return pm.read_int(GetPtrAddr(pm.base_address + 0x0074DE40, offsets=[0x8, 0x8, 0x60, 0x8, 0x10, 0xB0, 0xD0]))
+    try:
+        return pm.read_int(GetPtrAddr(pm.base_address + 0x0074DE40, offsets=[0x8, 0x8, 0x60, 0x8, 0x10, 0xB0, 0xD0]))
+    except:
+        pass
