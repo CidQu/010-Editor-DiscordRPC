@@ -15,8 +15,9 @@ People can track what byte you are working on at the moment.
 # Will add it soon
 
 * Understand the differences between HEX File and a TEXT file.
+* Make the script stops when the user closes 010 Editor.
 * <s>Add file name</s> ✅ 
-* Make the loop better
+* <s>Make the loop better</s> ✅
 
 # Used Libraries
 
