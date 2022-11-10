@@ -40,20 +40,8 @@ while not False:
         state_byte = "At Byte: " + str(byte)
         details_file = "Editing " + fileName
 
-        if not old_byte == byte:
+        if not old_byte == byte or old_fileName == fileName:
             old_byte == byte
-            RPC.update(
-                large_image = "0x303130",
-                large_text = "HEX File",
-                details = details_file,
-                state = state_byte,
-                start = start,
-                small_image = '010editor',
-                small_text = '010 Editor'
-            )
-            
-        elif not old_fileName == fileName:
-            old_fileName == fileName
             RPC.update(
                 large_image = "0x303130",
                 large_text = "HEX File",
